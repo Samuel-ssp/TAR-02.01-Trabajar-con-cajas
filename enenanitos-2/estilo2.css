@@ -1,0 +1,117 @@
+html{
+    background-color: rgba(71, 62, 62, 0.267);
+}
+body{
+    background-color: rgba(168, 108, 17, 0.562);
+    width: 1280px;
+    height: 800px;
+    border: solid 10px white;
+    margin: auto; /* Centrar body */
+    
+}
+/* Espacio útil para colocar las camas:
+
+    Ancho útil: 1280px - 20px (10px borde izquierdo + 10px borde derecho) = 1260px
+    Alto útil: 800px - 20px (10px borde superior + 10px borde inferior) = 780px
+*/
+
+/* 
+    CLASE cama
+ */
+.cama{
+    text-align: center;
+    width: 100px;
+    height: 300px;
+    margin: 40px 20px;
+    padding: 2px 10px;
+}
+/* 
+    Distribucion en dos secciones
+ */
+
+#fila-superior .cama{
+    display: inline-block;
+    
+}
+
+#fila-inferior .cama{
+    float:left;   
+}
+
+#fila-inferior .cama:first-child {
+    /* float: none; */   /* Quita el float solo al primero */
+}
+
+
+/* 
+    Colores característicos de cada enanito 
+*/
+#sabio {
+    background-color: #8B4513;      /* Marrón */
+}
+
+#grunon {
+    background-color: #D6234A !important;       /* Rojo oscuro */
+    float: right;
+    /* 
+        Body 800 de alto - 20px bordes = 780px útil
+        Cama 300 de alto
+        (780 - 300) / 2 = 240px margen superior
+    */
+    margin-top: 240px;
+}
+
+#feliz {
+    background-color: #FFD700;      /* Dorado/Amarillo */
+}
+
+#dormilon {
+    background-color: #4682B4;      /* Azul */
+}
+
+#timido {
+    background-color: #FF69B4;      /* Rosa */
+    position: relative;
+    z-index: -1;
+}
+
+#mocoso {
+    background-color: #9370DB;      /* Púrpura */
+}
+
+#mudito {
+    background-color: #90EE90;      /* Verde claro */
+}
+
+#ventana, #puerta{
+    width: 30px;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+}
+#ventana{
+    background-color: #4682B4;
+    left: 95px;
+}
+#puerta{
+    background-color: #5f2a04;
+    right: 76px;
+}
+/* 
+    --------------ESTILOS----------------- 
+ */
+/* 
+.cama::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: red;
+}
+#fila-superior .cama:nth-child(even),#fila-inferior .cama:nth-child(even){
+
+    background-color:  #F1FEE3;
+
+}
+
+#fila-superior,#fila-inferior{
+    padding: 0px 15xp;
+} */
