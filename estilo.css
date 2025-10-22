@@ -80,7 +80,20 @@ body{
     background-color: #90EE90;      /* Verde claro */
 }
 
-
+#ventana, #puerta{
+    width: 30px;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+}
+#ventana{
+    background-color: #4682B4;
+    left: 95px;
+}
+#puerta{
+    background-color: #5f2a04;
+    right: 76px;
+}
 /* 
  --------------ESTILOS----------------- 
  */
